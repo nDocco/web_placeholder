@@ -1,0 +1,13 @@
+/** #MAIN ELEMENTS# **/
+main {
+	display: inline-block;
+	margin: 0 10vw;
+}
+main * p { padding-left: 2ch; }
+main p { margin: 0; }
+
+/* ~HEADING ELEMENT~ */
+main .heading {
+	border-bottom: solid #35a833 0.5em;
+	margin: 1ch 0;
+}

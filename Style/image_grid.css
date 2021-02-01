@@ -1,0 +1,31 @@
+/** #MAIN ELEMENTS# **/
+main {
+	display: grid;
+	margin: 0 10vw;
+	padding: 0;
+	
+	grid-auto-flow: row;
+	justify-content: space-between;
+	place-items: stretch stretch;
+	
+	grid-template-columns: 18vw 18vw 18vw 18vw;
+	gap: 2vh 2vw;
+	
+	text-align: center;
+}
+/** ~HEADING~ **/
+main .heading {
+	grid-column-start: 1;
+	grid-column-end: span 4;
+	text-align: center;	
+}
+/** ~THUMBS~ **/
+.thumb {
+	height: 25vh;
+	overflow: hidden;
+}
+.thumb h4 { margin-bottom: 0.5em; }
+.thumb img {
+	max-width: 100%;
+	object-fit: cover;
+}

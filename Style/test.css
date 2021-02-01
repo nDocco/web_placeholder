@@ -1,0 +1,15 @@
+* { box-sizing: border-box; }
+body {
+	color: black;
+	font-family: "Times New Roman", Georgia, serif;
+	font-size: 1em;
+	line-height: 1;
+	margin: 0;
+	padding: 0;
+}
+div {
+	float: left;
+	width: 10vw;
+}
+div:nth-of-type(odd) { background: blue; }
+div:nth-of-type(even) { background: red; }

@@ -1,0 +1,40 @@
+/** #MAIN ELEMENTS# **/
+main {
+	display: grid;
+	grid-auto-flow: row dense;
+	justify-content: center;
+	align-items: start;
+	grid-template-columns: 30vw 10vw 10vw 30vw;
+}
+main section img { max-width: 100%; }
+main .heading {
+	grid-column-start: 1;
+	grid-column-end: span 4;
+	text-align: center;	
+}
+main .body_text {
+	grid-column-start: 1;
+	grid-column-end: span 4;
+}
+main .left_image {
+	grid-column-start: 1;
+	grid-column-end: span 1;
+}
+main .right_image {
+	grid-column-start: 4;
+	grid-column-end: span 1
+}
+main .left_image + * { 
+	grid-column-start: 2;
+	grid-column-end: span 3;
+	padding-left: 1ch;
+}
+main .right_image + * { 
+	grid-column-start: 1;
+	grid-column-end: span 3;
+	padding-right: 1ch;
+}
+main .gallery {
+	grid-column-start: 1;
+	grid-column-end: span 4;
+}

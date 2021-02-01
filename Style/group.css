@@ -1,0 +1,118 @@
+/*** ## GLOBAL ## ***/
+* {
+	background: #cccc99;
+	box-sizing: border-box;
+}
+body {
+	color: black;
+	font-family: "Times New Roman", Georgia, serif;
+	font-size: 1.2em;
+	line-height: 1;
+	margin: 0;
+	padding: 0;
+}
+/* Set default padding and margins from heading elements */
+h1, h2, h3, h4, h5, h6 {
+	padding: 0;
+	margin: 0;
+}
+/* Set default properties for lists */
+ol, ul { list-style-postion: outside; }
+/* Clear floats after content */
+header::after, nav::after, main::after {
+	content: "";
+	clear: both;
+	display: table;
+	height: 0;
+}
+
+/** #HEADER ELEMENTS# **/
+header { 
+	padding: 0 10vw 1rem;
+	margin: 0;
+	height: 7rem;
+	position: sticky;
+	top: 0;
+	
+	display: grid;
+	align-items: center;
+	grid-template-columns: max-content max-content auto;
+	column-gap: 1ch;
+	grid-template-areas:
+		'logo company contact'
+		'logo address contact';
+}
+header .header_logo { grid-area: logo; }
+.header_logo img {
+	max-height: 6rem;
+	object-fit: contain;
+}
+header .company {
+	color: #35a833;
+	font-family	font-family: "Georgia Bold", Georgia, Garamond, serif;
+	font-variant: small-caps;
+	font-weight: 800;
+	grid-area: company;
+	-webkit-text-stroke: 1px black;
+}
+header .address { grid-area: address; }
+header .contact {
+	grid-area: contact;
+	align-self: end;
+	text-align: right;
+}
+
+
+/** #NAV ELEMENTS# **/
+nav {
+	background: #35a833;
+	border-style: solid none;
+	border-color: gold;
+	border-width: 0.1em;
+	
+	margin: 0;
+	padding: 0.3em 9vw;
+	position: sticky;
+	top: 7rem;
+	
+	color: white;
+	text-align: left;
+}
+/* Menu Lists */
+nav ul {
+	background: inherit;
+	margin: 0;
+	padding: 0;
+}
+nav ul li {
+	background: inherit;
+	display: inline;
+	margin: 0;
+	padding: 0;
+}
+nav ul li + li { border-left: 1px solid white; }
+/* Menu Links */
+nav a {
+	background: inherit;
+	padding: 0.2em 1em;
+	color: white;
+	text-decoration: none;
+}
+nav a:hover {
+	background: gold;
+	color: #35a833;
+}
+
+/** #MAIN ELEMENTS# **/
+
+
+/** #FOOTER ELEMENTS# **/
+footer {
+	border-top: 1px groove grey;
+	clear: both;
+	font-size: 0.7em;
+	margin-top: 2em;
+	padding: 0.5em 4em;
+	text-align: right;
+}
+footer p { margin: 0; }

@@ -1,0 +1,16 @@
+/** #GALLERY SECTION# **/
+main .gallery {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+}
+.gallery img {
+	max-height: 40vh;
+}
+.gallery img:hover {
+	transform: scale(1.5);
+}
+.gallery img + img {
+	margin-left: 0.5vw;
+	object-fit: cover;
+}
